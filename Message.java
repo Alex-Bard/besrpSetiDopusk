@@ -20,7 +20,7 @@ public class Message {
         else{
             errorPr = false;
         }
-        if (random2 < Pob){
+        if (random2 < this.Pob){
             errorOb = true;
         }
         else{
@@ -30,7 +30,7 @@ public class Message {
     }
 
     private boolean getResult(boolean ePr,boolean eOb){
-        if (ePr && ePr){
+        if (ePr || eOb){
             return false;
         }
         else return true;
